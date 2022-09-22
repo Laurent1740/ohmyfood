@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---- HEADER ----- */
+header .top{
+    text-align: center;
+    padding-bottom: 15px;
+}
+header .localisation{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
