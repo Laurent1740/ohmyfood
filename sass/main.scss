@@ -1,0 +1,23 @@
+.top {
+    &__h1 {
+        font-family: shrikhand;
+    }
+}
+.test {
+    background-color: aquamarine;
+    height: 50px;
+    width : 50px;
+}
+.menus {
+   &__title {
+    font-size: large;
+
+    &--red {
+        color:red;
+    }
+   } 
+
+   &__zone-image{
+    background-color: aqua;
+   }
+}

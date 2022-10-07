@@ -1,0 +1,19 @@
+{
+  "name": "projet_ohmyfood",
+  "version": "1.0.0",
+  "description": "projet openclassroom",
+  "main": "index.js",
+  "scripts": {
+     "sass": "sass --watch ./sass/main.scss:./public/css/style2.css --style compressed"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurent1740/ohmyfood.git"
+  },
+  "author": "laurent lacave bouche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laurent1740/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Laurent1740/ohmyfood#readme"
+}
