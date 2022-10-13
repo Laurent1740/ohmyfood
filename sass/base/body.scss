@@ -1,4 +1,3 @@
-@mixin body {
     * {
         margin: 0;
         padding: 0;
@@ -11,7 +10,7 @@
         text-decoration: none;
       }
       header .top h1,
+      .menu_top h1,
       footer h3 {
         font-family: "Shrikhand", sans-serif;
       } 
-}

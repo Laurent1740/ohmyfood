@@ -1,14 +1,4 @@
-@import'./base/body.scss';
-@import './utils/variables';
-@import './layout/footer';
-@import './layout/header';
-@import './composants/button';
-// Règles pour le body
-@include body;
-//   ZONE HEADER
-@include header;
-// ZONE MAIN
-main {
+._menu {
     background-color: $tertiaire;
 }
 .menu {
@@ -60,6 +50,3 @@ ul {
         }
     }  
 }
-@include button;
-// ZONE FOOTER
-@include footer;

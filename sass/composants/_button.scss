@@ -1,9 +1,9 @@
 @mixin button {
-    button {
+    .menus_button {
         border : none;
         height : 60px;
         width : 230px;
-        margin : 30px 0 50px 190px;
+        margin : 30px 0 50px 150px;
         border-radius: 25px;
         font-weight: bold;
         font-size: 20px;
@@ -11,5 +11,17 @@
         @include gradiant;
         box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
     }
-
+}
+.intro {
+    button {
+        border : none;
+        height : 50px;
+        width : 210px;
+        margin : 30px 0 50px 0;
+        border-radius: 25px;
+        font-weight: bold;
+        color : white;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+    }
 }

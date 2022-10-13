@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-p, h2, h3, header ol li {
+p, h1, h2, h3, header ol li {
   font-family: "roboto";
 }
 
@@ -13,6 +13,7 @@ a:link {
 }
 
 header .top h1,
+.menu_top h1,
 footer h3 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -59,16 +60,70 @@ footer h3 {
   width: 70%;
   text-align: center;
 }
+
 .intro button {
   border: none;
   height: 50px;
-  width: 180px;
+  width: 210px;
   margin: 30px 0 50px 0;
   border-radius: 25px;
   font-weight: bold;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+._menu {
+  background-color: rgb(245, 245, 245);
+}
+
+.menu {
+  margin: -70px 0 30px 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu h1 {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  padding: 30px 0 0 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.menu h1 i {
+  margin-left: 195px;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+ul {
+  padding-left: 30px;
+  list-style: none;
+}
+ul li .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+ul li .information {
+  background-color: white;
+  height: 100px;
+  width: 95%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgb(192, 191, 191);
+}
+ul li .information h2 {
+  margin-bottom: 5px;
+}
+ul li .information .information__info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 .fonction {
@@ -169,6 +224,7 @@ footer h3 {
 }
 .menus .menus__new::before {
   content: "Nouveau";
+  font-family: "roboto";
   position: absolute;
   right: 15px;
   top: 15px;
@@ -178,6 +234,46 @@ footer h3 {
   height: 30px;
   display: grid;
   place-items: center;
+}
+
+.menu_top {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menu_top h1 {
+  height: 80px;
+  width: 80%;
+  padding: 20px;
+  font-size: 40px;
+}
+.menu_top .fa-arrow-left {
+  padding-top: 35px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+}
+
+.banner img {
+  display: block;
+  object-position: center bottom;
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menus_button {
+  border: none;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0 50px 150px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
 }
 
 footer {
@@ -196,6 +292,9 @@ footer ul {
 }
 footer ul li a {
   color: white;
+}
+footer ul li .fa-utensils {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
