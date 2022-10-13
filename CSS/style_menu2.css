@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, header ol li {
+  font-family: "roboto";
+}
+
+a:link {
+  text-decoration: none;
+}
+
+header .top h1,
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.top {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.top h1 {
+  height: 80px;
+  width: 80%;
+  padding: 20px;
+  font-size: 40px;
+}
+.top .fa-arrow-left {
+  padding-top: 35px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+}
+
+.banner img {
+  display: block;
+  object-position: center bottom;
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+main {
+  background-color: rgb(245, 245, 245);
+}
+
+.menu {
+  margin: -70px 0 30px 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu h1 {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  padding: 30px 0 0 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.menu h1 i {
+  margin-left: 195px;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+ul {
+  padding-left: 30px;
+  list-style: none;
+}
+ul li .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+ul li .information {
+  background-color: white;
+  height: 100px;
+  width: 95%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgb(192, 191, 191);
+}
+ul li .information h2 {
+  margin-bottom: 5px;
+}
+ul li .information .information__info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0 50px 190px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+footer {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  height: 250px;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  height: 80%;
+  font-size: 22px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=style_menu2.css.map */

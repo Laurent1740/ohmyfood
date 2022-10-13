@@ -1,1 +1,8 @@
-$gradiant : linear-gradient(to bottom right, #FF79DA, #9356DC);
+$primary : #FF79DA;
+$secondary : #9356DC;
+$tertiaire : rgb(245, 245, 245);
+
+@mixin gradiant {
+    background : linear-gradient(to bottom right, $primary, $secondary);
+}
+

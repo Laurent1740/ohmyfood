@@ -1,172 +1,201 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-p, h2 {
-    font-family: 'roboto';
+
+p, h2, h3, header ol li {
+  font-family: "roboto";
 }
-a:link 
-{ 
- text-decoration:none; 
-} 
+
+a:link {
+  text-decoration: none;
+}
+
 header .top h1,
 footer h3 {
-    font-family: 'Shrikhand', sans-serif;
+  font-family: "Shrikhand", sans-serif;
 }
-/* ---- HEADER ----- */
-header .top{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+
+.top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-header .top h1 {
-    height : 80px;
-    width : 100%;
-    padding : 20px;
+.top h1 {
+  height: 80px;
+  width: 100%;
+  padding: 20px;
 }
-header .localisation {
-    background-color: rgb(230, 230, 230);
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    padding-top : 20px;
-    box-shadow: inset -1px 4px 2px -1px rgba(157, 157, 157, 0.633);
-    font-size: 20px;
+.top .top__localisation {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding-top: 20px;
+  box-shadow: inset -1px 4px 2px -1px rgba(157, 157, 157, 0.633);
+  font-size: 20px;
 }
-header .localisation .fa-location-dot {
-    padding-right : 20px;
+.top .top__localisation .fa-location-dot {
+  padding-right: 20px;
 }
-header .intro {
-    display: flex;   
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 330px;
-    padding-top : 40px;
-    background-color: rgb(247, 247, 247);
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 330px;
+  padding-top: 40px;
+  background-color: rgb(247, 247, 247);
 }
-header .intro h2 {
-    width: 70%;
-    font-size: 30px;
-    text-align: center;
+.intro h2 {
+  width: 70%;
+  font-size: 30px;
+  text-align: center;
 }
-header .intro p {
-    font-size: 20px;
-    width :70%;
-    text-align: center;
+.intro p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
 }
-header .intro button {
-    border : none;
-    height : 50px;
-    width : 180px;
-    margin : 30px 0 50px 0;
-    border-radius: 25px;
-    font-weight: bold;
-    color : white;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+.intro button {
+  border: none;
+  height: 50px;
+  width: 180px;
+  margin: 30px 0 50px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
 }
-/* ------ zone FONCTIONNEMENT --------- */
+
 .fonction {
-    counter-reset : list;
-    height : 450px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  counter-reset: list;
+  height: 450px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .fonction h2 {
-    font-size: 30px;
-    width: 100%;
-    margin : 30px 0 0 50px;
+  font-size: 30px;
+  width: 100%;
+  margin: 30px 0 0 15px;
 }
 .fonction ol {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 .fonction ol li {
-    padding : 25px 0 25px 20px;
-    width: 100%;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    box-shadow: 2px 5px 15px rgba(205, 205, 205, 0.633);
-    background-color: rgb(247, 247, 247);
-    font-size: 20px;
-    font-weight: bold;
-    list-style: none;
+  padding: 25px 0 25px 20px;
+  width: 93%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 2px 5px 15px rgba(205, 205, 205, 0.633);
+  background-color: rgb(247, 247, 247);
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
 }
 .fonction ol li i {
-    margin-right : 30px;
+  margin-right: 30px;
 }
 .fonction ol li::before {
-    content : counter(list);
-    counter-increment : list;
-    background-color: #9356DC;
-    color: white;
-    padding : 5px 9px 5px 9px;
-    border-radius: 50%;
-    margin-left: -32px;
-    margin-right: 32px;
-    font-size: 14px;
+  content: counter(list);
+  counter-increment: list;
+  background-color: #9356DC;
+  color: white;
+  padding: 5px 9px 5px 9px;
+  border-radius: 50%;
+  margin-left: -32px;
+  margin-right: 32px;
+  font-size: 14px;
+  font-family: "roboto";
 }
-/* -------- zone RESTAURANTS --------- */
+
 .menus {
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}   
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .menus h2 {
-    width: 100%;
-    margin : 30px 0 30px 38px;
-    font-size: 30px;
+  width: 100%;
+  margin: 30px 0 30px 38px;
+  font-size: 30px;
 }
 .menus article {
-    width : 85%;
-    background-color: white;
-    margin-bottom : 30px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  width: 85%;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 .menus article figure {
-    height: 260px;
+  height: 260px;
 }
 .menus article figure img {
-    height: 190px;
-    width : 100%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius : 20px;
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .menus article figcaption {
-    color : black;
-    padding-left : 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  color: black;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.menus article figcaption i{
-    font-size: 25px;
+.menus article figcaption i {
+  font-size: 25px;
 }
 .menus article figcaption div {
-    margin : 10px 20px 0 0;
+  margin: 10px 20px 0 0;
 }
 .menus article figcaption .fa-color {
-    color : #9356DC ;
+  transition: color 0ms;
 }
-/* ------ FOOTER ---------- */
+.menus article figcaption .fa-color:hover {
+  color: #9356DC;
+}
+.menus .menus__new {
+  position: relative;
+}
+.menus .menus__new::before {
+  content: "Nouveau";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 20px;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+
 footer {
-    background-color: rgb(55, 55, 55);
-    color: white;
-    height : 250px;
-    padding : 20px 0 0 20px;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  height: 250px;
+  padding: 20px 0 0 40px;
 }
 footer ul {
-    height: 80%;
-    font-size: 20px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 80%;
+  font-size: 22px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+footer ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

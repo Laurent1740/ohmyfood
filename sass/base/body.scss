@@ -1,0 +1,17 @@
+@mixin body {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p, h1, h2, h3, header ol li {
+        font-family: "roboto";
+      }
+      a:link {
+        text-decoration: none;
+      }
+      header .top h1,
+      footer h3 {
+        font-family: "Shrikhand", sans-serif;
+      } 
+}

@@ -1,0 +1,21 @@
+@mixin footer {
+    footer {
+        background-color: rgb(55, 55, 55);
+        color: white;
+        height : 250px;
+        padding : 20px 0 0 40px;
+        ul {
+            height: 80%;
+            font-size: 22px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            li {
+                a {
+                    color : white;
+                } 
+            }
+        }
+    }
+}
