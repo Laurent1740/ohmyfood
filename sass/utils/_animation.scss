@@ -1,0 +1,10 @@
+@keyframes cascade {
+    0% {
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100% {
+        transform: tranlateY(0);
+        opacity: 1;
+    }
+}

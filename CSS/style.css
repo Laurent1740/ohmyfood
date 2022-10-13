@@ -82,6 +82,7 @@ footer h3 {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 .menu h1 {
   background-color: rgb(245, 245, 245);
@@ -94,6 +95,23 @@ footer h3 {
   margin-left: 195px;
   padding-top: 5px;
   font-size: 30px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.menu h1 .fa-color {
+  opacity: 0;
+  transition: all 400ms;
+}
+.menu h1:hover .fa-invisible {
+  display: none;
+}
+.menu h1:hover .fa-color {
+  opacity: 1;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ul {
@@ -102,6 +120,12 @@ ul {
 }
 ul li .title {
   font-size: 24px;
+  margin-bottom: 5px;
+}
+ul li .color {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
   margin-bottom: 20px;
 }
 ul li .information {
@@ -115,6 +139,38 @@ ul li .information {
   flex-direction: column;
   justify-content: center;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
+  animation: cascade 1s;
+  animation-fill-mode: both;
+}
+ul li .information:nth-child(1) {
+  animation-delay: 150ms;
+}
+ul li .information:nth-child(2) {
+  animation-delay: 300ms;
+}
+ul li .information:nth-child(3) {
+  animation-delay: 450ms;
+}
+ul li .information:nth-child(4) {
+  animation-delay: 600ms;
+}
+ul li .information:nth-child(5) {
+  animation-delay: 750ms;
+}
+ul li .information:nth-child(6) {
+  animation-delay: 900ms;
+}
+ul li .information:nth-child(7) {
+  animation-delay: 1050ms;
+}
+ul li .information:nth-child(8) {
+  animation-delay: 1200ms;
+}
+ul li .information:nth-child(9) {
+  animation-delay: 1350ms;
+}
+ul li .information:nth-child(10) {
+  animation-delay: 1500ms;
 }
 ul li .information h2 {
   margin-bottom: 5px;
@@ -206,18 +262,30 @@ ul li .information .information__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .menus article figcaption i {
   font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
 .menus article figcaption div {
   margin: 10px 20px 0 0;
 }
 .menus article figcaption .fa-color {
-  transition: color 0ms;
+  opacity: 0;
+  transition: all 400ms;
 }
-.menus article figcaption .fa-color:hover {
-  color: #9356DC;
+.menus article figcaption:hover .fa-invisible {
+  display: none;
+}
+.menus article figcaption:hover .fa-color {
+  opacity: 1;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menus .menus__new {
   position: relative;
@@ -236,6 +304,16 @@ ul li .information .information__info {
   place-items: center;
 }
 
+@keyframes cascade {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: tranlateY(0);
+    opacity: 1;
+  }
+}
 .menu_top {
   display: flex;
   text-align: center;
@@ -294,7 +372,10 @@ footer ul li a {
   color: white;
 }
 footer ul li .fa-utensils {
-  margin-right: 8px;
+  margin-right: 5px;
+}
+footer ul li .fa-handshake-angle {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

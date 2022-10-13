@@ -6,7 +6,7 @@
 @import './composants/button';
 @import './pages/body-menu';
 @import './pages/body-index';
-
+@import './utils/animation';
 @include header;
 @include button;
 @include footer;

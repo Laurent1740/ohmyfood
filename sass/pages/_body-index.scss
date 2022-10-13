@@ -77,16 +77,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             i{
                 font-size: 25px;
+                position :absolute;
+                right: 20px;
+                top: 15px;
             }
             div {
                 margin : 10px 20px 0 0;
             }
             .fa-color {
-                transition: color 00ms;
-                &:hover {
-                    color: $secondary;
+                opacity: 0;
+                transition: all 400ms;
+            }
+            &:hover {
+                .fa-invisible {
+                    display: none;
+                }
+                .fa-color {
+                    opacity: 1;
+                    @include degrade;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }

@@ -5,4 +5,7 @@ $tertiaire : rgb(245, 245, 245);
 @mixin gradiant {
     background : linear-gradient(to bottom right, $primary, $secondary);
 }
+@mixin degrade {
+    background : linear-gradient(to bottom right, $primary, $secondary);
+}
 
