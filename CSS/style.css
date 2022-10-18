@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-p, h1, h2, h3, header ol li {
+p, h1, h2, h3,
+header ol li, footer ul li {
   font-family: "roboto";
 }
 
@@ -16,6 +17,30 @@ header .top h1,
 .menu_top h1,
 footer h3 {
   font-family: "Shrikhand", sans-serif;
+}
+
+footer {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  height: 250px;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  height: 80%;
+  font-size: 22px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer ul li a {
+  color: white;
+}
+footer ul li .fa-utensils {
+  margin-right: 5px;
+}
+footer ul li .fa-handshake-angle {
+  font-size: 18px;
 }
 
 .top {
@@ -61,16 +86,107 @@ footer h3 {
   text-align: center;
 }
 
-.intro button {
+.menus_button {
   border: none;
-  height: 50px;
-  width: 210px;
-  margin: 30px 0 50px 0;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0 50px 150px;
   border-radius: 25px;
   font-weight: bold;
+  font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+.intro button {
+  border: none;
+  height: 60px;
+  width: 290px;
+  margin: 30px 0 50px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+.menus_button {
+  border: none;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0 50px 150px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+.intro button {
+  border: none;
+  height: 60px;
+  width: 290px;
+  margin: 30px 0 50px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+footer {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  height: 250px;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  height: 80%;
+  font-size: 22px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer ul li a {
+  color: white;
+}
+footer ul li .fa-utensils {
+  margin-right: 5px;
+}
+footer ul li .fa-handshake-angle {
+  font-size: 18px;
+}
+
+.menu_top {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menu_top h1 {
+  height: 80px;
+  width: 80%;
+  padding: 20px;
+  font-size: 40px;
+}
+.menu_top .fa-arrow-left {
+  padding-top: 35px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+}
+
+.banner img {
+  display: block;
+  object-position: center bottom;
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
 }
 
 ._menu {
@@ -119,6 +235,7 @@ ul {
   list-style: none;
 }
 ul li .title {
+  font-weight: 300;
   font-size: 24px;
   margin-bottom: 5px;
 }
@@ -180,6 +297,99 @@ ul li .information .information__info {
   justify-content: space-between;
   padding-right: 20px;
   font-size: 20px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.top h1 {
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+}
+.top .top__localisation {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding-top: 20px;
+  box-shadow: inset -1px 4px 2px -1px rgba(157, 157, 157, 0.633);
+  font-size: 20px;
+}
+.top .top__localisation .fa-location-dot {
+  padding-right: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 330px;
+  padding-top: 40px;
+  background-color: rgb(247, 247, 247);
+}
+.intro h2 {
+  width: 70%;
+  font-size: 30px;
+  text-align: center;
+}
+.intro p {
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.menus_button {
+  border: none;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0 50px 150px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+.intro button {
+  border: none;
+  height: 60px;
+  width: 290px;
+  margin: 30px 0 50px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+
+footer {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  height: 250px;
+  padding: 20px 0 0 40px;
+}
+footer ul {
+  height: 80%;
+  font-size: 22px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer ul li a {
+  color: white;
+}
+footer ul li .fa-utensils {
+  margin-right: 5px;
+}
+footer ul li .fa-handshake-angle {
+  font-size: 18px;
 }
 
 .fonction {
@@ -316,69 +526,6 @@ ul li .information .information__info {
     transform: tranlateY(0);
     opacity: 1;
   }
-}
-.menu_top {
-  display: flex;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.menu_top h1 {
-  height: 80px;
-  width: 80%;
-  padding: 20px;
-  font-size: 40px;
-}
-.menu_top .fa-arrow-left {
-  padding-top: 35px;
-  margin-left: 40px;
-  font-size: 30px;
-  font-weight: 900;
-  color: black;
-}
-
-.banner img {
-  display: block;
-  object-position: center bottom;
-  height: 400px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.menus_button {
-  border: none;
-  height: 60px;
-  width: 230px;
-  margin: 30px 0 50px 150px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
-}
-
-footer {
-  background-color: rgb(55, 55, 55);
-  color: white;
-  height: 250px;
-  padding: 20px 0 0 40px;
-}
-footer ul {
-  height: 80%;
-  font-size: 22px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-footer ul li a {
-  color: white;
-}
-footer ul li .fa-utensils {
-  margin-right: 5px;
-}
-footer ul li .fa-handshake-angle {
-  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
