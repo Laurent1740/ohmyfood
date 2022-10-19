@@ -60,12 +60,15 @@ ul {
             background-color: #99E2D0            ;
             margin-bottom: 20px;
         }
-        .information {
-            @for $i from 1 through 10 {
+        .information{
+            $info : 100ms;
+            @for $i from 10 through 1 {
                 &:nth-child(#{$i}) {
-                    animation-delay: 150ms * $i;
+                    animation-delay: 100ms * $i;
                 }
-            }
+                animation: cascade 2s;
+                animation-fill-mode: both;
+            } 
             background-color: white;
             height : 100px;
             width : 95%;
@@ -85,8 +88,11 @@ ul {
                 padding-right : 20px;
                 font-size: 20px;
             }
-            animation: cascade 1s;
-            animation-fill-mode: both;
         }
+    }
+    .bouton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }   
 }

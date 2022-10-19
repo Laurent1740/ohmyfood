@@ -96,9 +96,21 @@
             }
             .fa-color {
                 opacity: 0;
-                transition: all 400ms;
+                transition: all 400ms ease-in-out;
             }
             &:hover {
+                .fa-invisible {
+                    display: none;
+                }
+                .fa-color {
+                    opacity: 1;
+                    @include degrade;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:active {
                 .fa-invisible {
                     display: none;
                 }

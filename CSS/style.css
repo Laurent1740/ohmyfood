@@ -90,7 +90,7 @@ footer ul li .fa-handshake-angle {
   border: none;
   height: 60px;
   width: 230px;
-  margin: 30px 0 50px 150px;
+  margin: 30px 0 50px 0;
   border-radius: 25px;
   font-weight: bold;
   font-size: 20px;
@@ -116,7 +116,7 @@ footer ul li .fa-handshake-angle {
   border: none;
   height: 60px;
   width: 230px;
-  margin: 30px 0 50px 150px;
+  margin: 30px 0 50px 0;
   border-radius: 25px;
   font-weight: bold;
   font-size: 20px;
@@ -246,6 +246,26 @@ ul li .color {
   margin-bottom: 20px;
 }
 ul li .information {
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
+  animation: cascade 2s;
+  animation-fill-mode: both;
   background-color: white;
   height: 100px;
   width: 95%;
@@ -256,38 +276,36 @@ ul li .information {
   flex-direction: column;
   justify-content: center;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
-  animation: cascade 1s;
-  animation-fill-mode: both;
 }
-ul li .information:nth-child(1) {
-  animation-delay: 150ms;
+ul li .information:nth-child(10) {
+  animation-delay: 1000ms;
 }
-ul li .information:nth-child(2) {
-  animation-delay: 300ms;
+ul li .information:nth-child(9) {
+  animation-delay: 900ms;
 }
-ul li .information:nth-child(3) {
-  animation-delay: 450ms;
+ul li .information:nth-child(8) {
+  animation-delay: 800ms;
 }
-ul li .information:nth-child(4) {
+ul li .information:nth-child(7) {
+  animation-delay: 700ms;
+}
+ul li .information:nth-child(6) {
   animation-delay: 600ms;
 }
 ul li .information:nth-child(5) {
-  animation-delay: 750ms;
+  animation-delay: 500ms;
 }
-ul li .information:nth-child(6) {
-  animation-delay: 900ms;
+ul li .information:nth-child(4) {
+  animation-delay: 400ms;
 }
-ul li .information:nth-child(7) {
-  animation-delay: 1050ms;
+ul li .information:nth-child(3) {
+  animation-delay: 300ms;
 }
-ul li .information:nth-child(8) {
-  animation-delay: 1200ms;
+ul li .information:nth-child(2) {
+  animation-delay: 200ms;
 }
-ul li .information:nth-child(9) {
-  animation-delay: 1350ms;
-}
-ul li .information:nth-child(10) {
-  animation-delay: 1500ms;
+ul li .information:nth-child(1) {
+  animation-delay: 100ms;
 }
 ul li .information h2 {
   margin-bottom: 5px;
@@ -297,6 +315,11 @@ ul li .information .information__info {
   justify-content: space-between;
   padding-right: 20px;
   font-size: 20px;
+}
+ul .bouton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .top {
@@ -346,7 +369,7 @@ ul li .information .information__info {
   border: none;
   height: 60px;
   width: 230px;
-  margin: 30px 0 50px 150px;
+  margin: 30px 0 50px 0;
   border-radius: 25px;
   font-weight: bold;
   font-size: 20px;
@@ -488,12 +511,22 @@ footer ul li .fa-handshake-angle {
 }
 .menus article figcaption .fa-color {
   opacity: 0;
-  transition: all 400ms;
+  transition: all 400ms ease-in-out;
 }
 .menus article figcaption:hover .fa-invisible {
   display: none;
 }
 .menus article figcaption:hover .fa-color {
+  opacity: 1;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus article figcaption:active .fa-invisible {
+  display: none;
+}
+.menus article figcaption:active .fa-color {
   opacity: 1;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   background-clip: text;
@@ -524,6 +557,14 @@ footer ul li .fa-handshake-angle {
   }
   100% {
     transform: tranlateY(0);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
