@@ -62,12 +62,11 @@ ul {
         }
         
             .information{
-                @for $i from 10 through 1 {
-                    &:nth-child(#{$i}) {
+                @for $i from 1 through 12 {
+                    &:nth-of-type(#{$i}) {
                         animation-delay: 200ms * $i;
                     }
                 } 
-                
                 overflow: hidden;
                 animation: cascade 2s;
                 animation-fill-mode: both;

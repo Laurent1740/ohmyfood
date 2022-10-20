@@ -258,35 +258,41 @@ ul li .information {
   display: flex;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
-ul li .information:nth-child(10) {
-  animation-delay: 2000ms;
+ul li .information:nth-of-type(1) {
+  animation-delay: 200ms;
 }
-ul li .information:nth-child(9) {
-  animation-delay: 1800ms;
-}
-ul li .information:nth-child(8) {
-  animation-delay: 1600ms;
-}
-ul li .information:nth-child(7) {
-  animation-delay: 1400ms;
-}
-ul li .information:nth-child(6) {
-  animation-delay: 1200ms;
-}
-ul li .information:nth-child(5) {
-  animation-delay: 1000ms;
-}
-ul li .information:nth-child(4) {
-  animation-delay: 800ms;
-}
-ul li .information:nth-child(3) {
-  animation-delay: 600ms;
-}
-ul li .information:nth-child(2) {
+ul li .information:nth-of-type(2) {
   animation-delay: 400ms;
 }
-ul li .information:nth-child(1) {
-  animation-delay: 200ms;
+ul li .information:nth-of-type(3) {
+  animation-delay: 600ms;
+}
+ul li .information:nth-of-type(4) {
+  animation-delay: 800ms;
+}
+ul li .information:nth-of-type(5) {
+  animation-delay: 1000ms;
+}
+ul li .information:nth-of-type(6) {
+  animation-delay: 1200ms;
+}
+ul li .information:nth-of-type(7) {
+  animation-delay: 1400ms;
+}
+ul li .information:nth-of-type(8) {
+  animation-delay: 1600ms;
+}
+ul li .information:nth-of-type(9) {
+  animation-delay: 1800ms;
+}
+ul li .information:nth-of-type(10) {
+  animation-delay: 2000ms;
+}
+ul li .information:nth-of-type(11) {
+  animation-delay: 2200ms;
+}
+ul li .information:nth-of-type(12) {
+  animation-delay: 2400ms;
 }
 ul li .information h2 {
   margin-bottom: 5px;
