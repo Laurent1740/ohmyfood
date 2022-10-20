@@ -246,77 +246,97 @@ ul li .color {
   margin-bottom: 20px;
 }
 ul li .information {
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
-  animation: cascade 2s;
-  animation-fill-mode: both;
+  overflow: hidden;
   animation: cascade 2s;
   animation-fill-mode: both;
   background-color: white;
   height: 100px;
   width: 95%;
-  border-radius: 30px;
+  border-radius: 25px;
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
 ul li .information:nth-child(10) {
-  animation-delay: 1000ms;
+  animation-delay: 2000ms;
 }
 ul li .information:nth-child(9) {
-  animation-delay: 900ms;
+  animation-delay: 1800ms;
 }
 ul li .information:nth-child(8) {
-  animation-delay: 800ms;
+  animation-delay: 1600ms;
 }
 ul li .information:nth-child(7) {
-  animation-delay: 700ms;
+  animation-delay: 1400ms;
 }
 ul li .information:nth-child(6) {
-  animation-delay: 600ms;
+  animation-delay: 1200ms;
 }
 ul li .information:nth-child(5) {
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
 }
 ul li .information:nth-child(4) {
-  animation-delay: 400ms;
+  animation-delay: 800ms;
 }
 ul li .information:nth-child(3) {
-  animation-delay: 300ms;
+  animation-delay: 600ms;
 }
 ul li .information:nth-child(2) {
-  animation-delay: 200ms;
+  animation-delay: 400ms;
 }
 ul li .information:nth-child(1) {
-  animation-delay: 100ms;
+  animation-delay: 200ms;
 }
 ul li .information h2 {
   margin-bottom: 5px;
 }
-ul li .information .information__info {
+ul li .information .information__description {
+  padding-top: 20px;
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ul li .information .information__description h3 {
+  font-size: 24px;
+  text-overflow: ellipsis;
+}
+ul li .information .information__description p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+ul li .information .information__price {
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
+  padding: 60px 20px 0 10px;
   font-size: 20px;
+  margin-left: auto;
 }
-ul .bouton {
+ul li .information__check {
+  background-color: #99E2D0;
+  height: 100px;
+  width: 90px;
+  margin-right: -95px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: all 1s;
+}
+ul li .information__check .fa-circle-check {
+  font-size: 35px;
+  color: white;
+}
+ul li .information:hover .information__check {
+  margin-right: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li .information:hover .information__check .fa-circle-check {
+  transform: rotate(-2turn);
+  transition: 1s;
+}
+
+.bouton {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -533,6 +553,12 @@ footer ul li .fa-handshake-angle {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menus article figcaption:active:active .fa-color {
+  opacity: 0;
+}
+.menus article figcaption:active:active .fa-invisible {
+  opacity: 1;
+}
 .menus .menus__new {
   position: relative;
 }
@@ -566,6 +592,14 @@ footer ul li .fa-handshake-angle {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes validation {
+  0% {
+    margin-right: -95px;
+  }
+  100% {
+    margin-right: -1px;
   }
 }
 

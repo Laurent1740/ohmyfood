@@ -121,7 +121,16 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+                &:active {
+                    .fa-color {
+                        opacity : 0;
+                    }
+                    .fa-invisible {
+                        opacity: 1;
+                    }
+                }
             }
+
         }
     }
     .menus__new {
