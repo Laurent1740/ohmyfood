@@ -217,13 +217,14 @@ footer ul li .fa-handshake-angle {
 }
 .menu h1 .fa-color {
   opacity: 0;
-  transition: all 400ms;
+  transition: all 600ms;
 }
 .menu h1:hover .fa-invisible {
   display: none;
 }
 .menu h1:hover .fa-color {
   opacity: 1;
+  transition: all 600ms;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -233,6 +234,40 @@ footer ul li .fa-handshake-angle {
 ul {
   padding-left: 30px;
   list-style: none;
+}
+ul li {
+  animation: cascade 2s;
+  animation-fill-mode: both;
+}
+ul li:nth-child(1) {
+  animation-delay: 200ms;
+}
+ul li:nth-child(2) {
+  animation-delay: 400ms;
+}
+ul li:nth-child(3) {
+  animation-delay: 600ms;
+}
+ul li:nth-child(4) {
+  animation-delay: 800ms;
+}
+ul li:nth-child(5) {
+  animation-delay: 1000ms;
+}
+ul li:nth-child(6) {
+  animation-delay: 1200ms;
+}
+ul li:nth-child(7) {
+  animation-delay: 1400ms;
+}
+ul li:nth-child(8) {
+  animation-delay: 1600ms;
+}
+ul li:nth-child(9) {
+  animation-delay: 1800ms;
+}
+ul li:nth-child(10) {
+  animation-delay: 2000ms;
 }
 ul li .title {
   font-weight: 300;
@@ -247,8 +282,6 @@ ul li .color {
 }
 ul li .information {
   overflow: hidden;
-  animation: cascade 2s;
-  animation-fill-mode: both;
   background-color: white;
   height: 100px;
   width: 95%;
@@ -258,65 +291,32 @@ ul li .information {
   display: flex;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
-ul li .information:nth-of-type(1) {
-  animation-delay: 200ms;
-}
-ul li .information:nth-of-type(2) {
-  animation-delay: 400ms;
-}
-ul li .information:nth-of-type(3) {
-  animation-delay: 600ms;
-}
-ul li .information:nth-of-type(4) {
-  animation-delay: 800ms;
-}
-ul li .information:nth-of-type(5) {
-  animation-delay: 1000ms;
-}
-ul li .information:nth-of-type(6) {
-  animation-delay: 1200ms;
-}
-ul li .information:nth-of-type(7) {
-  animation-delay: 1400ms;
-}
-ul li .information:nth-of-type(8) {
-  animation-delay: 1600ms;
-}
-ul li .information:nth-of-type(9) {
-  animation-delay: 1800ms;
-}
-ul li .information:nth-of-type(10) {
-  animation-delay: 2000ms;
-}
-ul li .information:nth-of-type(11) {
-  animation-delay: 2200ms;
-}
-ul li .information:nth-of-type(12) {
-  animation-delay: 2400ms;
-}
 ul li .information h2 {
   margin-bottom: 5px;
 }
 ul li .information .information__description {
+  width: 100%;
+  max-width: 100%;
+  min-width: 20%;
   padding-top: 20px;
-  display: inline;
-  white-space: nowrap;
   overflow: hidden;
 }
 ul li .information .information__description h3 {
   font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 ul li .information .information__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 22px;
   margin-top: 10px;
 }
 ul li .information .information__price {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 20px 0 10px;
+  padding: 60px 30px 0 10px;
   font-size: 20px;
-  margin-left: auto;
 }
 ul li .information__check {
   background-color: #99E2D0;
@@ -325,6 +325,9 @@ ul li .information__check {
   margin-right: -95px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 1s;
 }
 ul li .information__check .fa-circle-check {
@@ -333,9 +336,6 @@ ul li .information__check .fa-circle-check {
 }
 ul li .information:hover .information__check {
   margin-right: -1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 ul li .information:hover .information__check .fa-circle-check {
   transform: rotate(-2turn);
@@ -589,14 +589,6 @@ footer ul li .fa-handshake-angle {
   }
   100% {
     transform: tranlateY(0);
-    opacity: 1;
-  }
-}
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
