@@ -1,9 +1,10 @@
 @import'./base/body.scss';
 @import './utils/variables';
 @import './layout/footer';
-@import './layout/header_index.scss';
+@import './layout/_header_index.scss';
 @import './layout/header';
 @import './composants/button';
 @import './pages/body-menu';
 @import './pages/body-index';
 @import './utils/animation';
+@import './layout/loader';
