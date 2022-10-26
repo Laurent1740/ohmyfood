@@ -5,7 +5,11 @@
     h1 {
         height : 80px;
         width : 100%;
-        padding : 20px;    
+        padding : 20px; 
+        @media screen and (min-width: 1189px){
+            font-size: 60px;
+            height: 120px;
+        }   
     }
     .top__localisation {
         background-color: rgb(230, 230, 230);
@@ -15,9 +19,13 @@
         padding-top : 20px;
         box-shadow: inset -1px 4px 2px -1px rgba(157, 157, 157, 0.633);
         font-size: 20px;
+        @media screen and (min-width: 1189px){
+            height: 90px;
+            padding-top: 35px;
+            font-size: 25px;
+        }
         .fa-location-dot {
             padding-right : 20px;
-
         }
     }
 }

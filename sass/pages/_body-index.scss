@@ -1,6 +1,5 @@
 @import '../layout/header_index.scss';
 @import '../composants/button';
-@import '../layout/footer';
 // ZONE "FONCTIONNEMENT"
 .fonction {
     counter-reset : list;
@@ -19,6 +18,10 @@
         display: flex;
         flex-direction: column;
         li {
+            @media screen and (min-width: 1189px){
+                height: 80px;
+                width: 30%;
+            }
             padding : 25px 0 25px 20px;
             width: 93%;
             margin-bottom: 30px;
@@ -49,6 +52,15 @@
             }
             
         }
+        @media screen and (min-width: 1189px){
+            width: 100%;
+            padding-right: 45px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    @media screen and (min-width: 1189px){
+        height: 300px;
     }
 }
 // ZONE RESTAURANTS
@@ -70,12 +82,18 @@
         box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
         figure {
             height: 260px;
+            @media screen and (min-width: 1189px){
+                height: 380px;
+            }
             img {
                 height: 190px;
                 width : 100%;
                 object-fit: cover;
                 border-top-left-radius: 20px;
                 border-top-right-radius : 20px;
+                @media screen and (min-width: 1189px){
+                    height: 300px;
+                }
             }
         }
         figcaption {
@@ -132,6 +150,9 @@
             }
 
         }
+        @media screen and (min-width: 800px){
+            width: 44%;
+        }
     }
     .menus__new {
         position : relative;
@@ -148,5 +169,8 @@
             display: grid;
             place-items: center;
         }
+    }
+    @media screen and (min-width: 800px){
+        justify-content: space-around;
     }
 }

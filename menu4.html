@@ -12,7 +12,7 @@
     <title>ohmyfood</title>
 </head>
 <body class="_menu">
-    <div class="container">
+    <div id="container">
         <div class="loader">
             <div class="loader__container">
                 <div class="loader__container__circle"></div>
@@ -22,6 +22,7 @@
                 <div class="loader__container__circle"></div>
             </div>
         </div>
+        <!-- HEADER -->
         <header>
             <div class="menu_top">
                 <a href="index.html">
@@ -30,6 +31,7 @@
                 <h1>ohmyfood</h1>
             </div>
         </header>
+        <!-- MAIN -->
         <main>
             <div class="banner">
                 <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant 'Le délice des sens'">
@@ -39,149 +41,157 @@
                     <i class="fa-solid fa-heart fa-color"></i>
                 </h1>
             </div>
-            <ul>
-                <li>
-                    <h2 class="title">ENTREES</h2>
-                    <div class="color"></div>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné de yuzu</p>
+            <!-- ZONE ' ENTREES' -->
+            <div class="ul__container">
+                <ul class="menu__ul__first">
+                    <li>
+                        <h2 class="title">ENTREES</h2>
+                        <div class="color"></div>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Tartare de thon</h3>
+                                <p>Assaisonné de yuzu</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>25€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>  
                         </div>
-                        <div class="information__price">
-                            <p><b>25€</b></p>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Bouchée de homard croustillant</h3>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>35€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>  
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Bouchée de homard croustillant</h3>
-                            <p>Et sa farandole de petits légumes</p>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Velouté de cèpes</h3>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>20€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__price">
-                            <p><b>35€</b></p>
+                    </li>
+                </ul>
+                <!-- ZONE 'PLATS' -->
+                <ul class="menu__ul__second">
+                    <li>
+                        <h3 class="title">PLATS</h3>
+                        <div class="color"></div>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Poulet rôti aux herbes de provence</h3>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>40€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Langouste rôtie</h3>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>35€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Velouté de cèpes</h3>
-                            <p>Aux truffes</p>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Côte de boeuf angus</h3>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>44€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__price">
-                            <p><b>20€</b></p>
+                    </li>
+                </ul>
+                <!-- ZONE 'DESSERTS' -->
+                <ul class="menu__ul__third">
+                    <li>
+                        <h3 class="title">DESSERTS</h3>
+                        <div class="color"></div>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Farandole de dessert</h3>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>18€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Crème brulée</h3>
+                                <p>A la noisette</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>22€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="title">PLATS</h3>
-                    <div class="color"></div>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Poulet rôti aux herbes de provence</h3>
-                            <p>Et sa crème de truffe</p>
+                    </li>
+                    <li>
+                        <div class="information">
+                            <div class="information__description">
+                                <h3>Tiramisu</h3>
+                                <p>A la noisette</p>
+                            </div>
+                            <div class="information__price">
+                                <p><b>23€</b></p>
+                            </div>
+                            <div class="information__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div class="information__price">
-                            <p><b>40€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Langouste rôtie</h3>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <div class="information__price">
-                            <p><b>35€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Côte de boeuf angus</h3>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <div class="information__price">
-                            <p><b>44€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="title">DESSERTS</h3>
-                    <div class="color"></div>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Farandole de dessert</h3>
-                            <p>Du chef</p>
-                        </div>
-                        <div class="information__price">
-                            <p><b>18€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Crème brulée</h3>
-                            <p>A la noisette</p>
-                        </div>
-                        <div class="information__price">
-                            <p><b>22€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="information">
-                        <div class="information__description">
-                            <h3>Tiramisu</h3>
-                            <p>A la noisette</p>
-                        </div>
-                        <div class="information__price">
-                            <p><b>23€</b></p>
-                        </div>
-                        <div class="information__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
             <div class="bouton">
                 <button class="menus_button">Commander</button>
             </div>
         </main>
+        <!-- FOOTER -->
         <footer>
+            <h3>ohmyfood</h3>
             <ul>
-                <li>
-                    <h3>ohmyfood</h3>
-                </li>
                 <li>
                     <i class="fa-solid fa-utensils"></i>
                     Proposer un restaurant

@@ -8,4 +8,80 @@ $tertiaire : rgb(245, 245, 245);
 @mixin degrade {
     background : linear-gradient(to bottom right, $primary, $secondary);
 }
-
+@mixin li_menu_content {
+    
+        .title {
+            font-weight: 300;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .color {
+            height: 4px;
+            width : 60px;
+            background-color: #99E2D0;
+            margin-bottom: 20px;
+        }
+        
+        .information {
+            overflow: hidden;
+            background-color: white;
+            height : 100px;
+            width : 95%;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            padding-left : 15px;
+            display: flex;
+            box-shadow: 2px 2px 5px rgb(192, 191, 191);
+            h2 {
+                margin-bottom : 5px;
+            }
+            .information__description {                
+                width: 100%;
+                max-width: 100%;
+                min-width: 20%;
+                padding-top : 20px;
+                overflow: hidden;
+                h3 {
+                    font-size: 24px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                p {                    
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: 22px;
+                    margin-top: 10px;
+                }
+            }
+            .information__price {
+                padding : 60px 30px 0 10px;
+                font-size: 20px;
+            }
+        }
+        .information__check {
+            background-color: #99E2D0;
+            height: 100px;
+            width: 90px;
+            margin-right : -95px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s;
+            .fa-circle-check {
+                font-size: 35px;
+                color: white;
+            }
+        }
+        .information:hover .information__check {
+            margin-right: -1px;
+            .fa-circle-check {
+                transform: rotate(-2turn);
+                transition : 1s;
+            }
+        }
+    
+}
