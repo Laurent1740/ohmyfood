@@ -5,7 +5,7 @@
         padding : 20px 0 0 40px;
         h3 {
             width: 90%;
-            margin-left: 1%;
+            margin : 15px 0 15px 1%;
             font-size: 25px;
             @media screen and (min-width: 1189px){
                 width: 95%;
@@ -24,8 +24,8 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             li {
+                margin-bottom: 5px;
                 a {
                     color : white;
                 } 

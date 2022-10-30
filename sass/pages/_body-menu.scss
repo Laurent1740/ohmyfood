@@ -23,8 +23,8 @@
             padding-top : 5px;
             font-size: 30px;
             position :absolute;
-                right: 50px;
-                top: 50px;
+            right: 50px;
+            top: 50px;
         }
         .fa-color {
             opacity: 0;
@@ -45,7 +45,7 @@
         }
     }
 }
-.ul__container {
+.ul-container {
     @media screen and (min-width: 1000px){
         display: flex;
         justify-content: space-around;
@@ -56,45 +56,45 @@
         }
     }
 }
-.menu__ul__first {
+.ul-container__first {
     padding-left: 30px;
     list-style: none;
     li { 
-    animation: cascade 2s;
-    animation-fill-mode: both;
-    @for $i from 1 through 10 {
-        &:nth-child(#{$i}){
-            animation-delay: 2.1s + 200ms * $i;
+        animation: cascade 2s;
+        animation-fill-mode: both;
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}){
+                animation-delay: 2.1s + 200ms * $i;
+            }
         }
-    }
     }
     @include li_menu_content;
 }
-.menu__ul__second {
+.ul-container__second {
     padding-left: 30px;
     list-style: none;
     li { 
-    animation: cascade 2s;
-    animation-fill-mode: both;
-    @for $i from 1 through 10 {
-        &:nth-child(#{$i}){
-            animation-delay: 2.7s + 200ms * $i;
+        animation: cascade 2s;
+        animation-fill-mode: both;
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}){
+                animation-delay: 2.7s + 200ms * $i;
+            }
         }
-    }
     }
     @include li_menu_content;
 }
-.menu__ul__third {
+.ul-container__third {
     padding-left: 30px;
     list-style: none;
     li { 
-    animation: cascade 2s;
-    animation-fill-mode: both;
-    @for $i from 1 through 10 {
-        &:nth-child(#{$i}){
-            animation-delay: 3.3s + 200ms * $i;
+        animation: cascade 2s;
+        animation-fill-mode: both;
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}){
+                animation-delay: 3.3s + 200ms * $i;
+            }
         }
-    }
     }
     @include li_menu_content;
 }

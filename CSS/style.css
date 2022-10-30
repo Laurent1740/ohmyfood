@@ -4,7 +4,7 @@
     opacity: 0;
   }
   100% {
-    transform: tranlateY(0);
+    transform: translate(0, 0);
     opacity: 1;
   }
 }
@@ -14,7 +14,7 @@
     opacity: 0.7;
   }
   100% {
-    transform: scaleY(100%);
+    transform: scaleY(1);
     opacity: 0;
     z-index: -2;
   }
@@ -36,7 +36,7 @@
     opacity: 0;
   }
   100% {
-    transform: tranlateY(0);
+    transform: translate(0, 0);
     opacity: 1;
   }
 }
@@ -46,7 +46,7 @@
     opacity: 0.7;
   }
   100% {
-    transform: scaleY(100%);
+    transform: scaleY(1);
     opacity: 0;
     z-index: -2;
   }
@@ -502,6 +502,7 @@ footer h3 {
 .menus .menus__new::before {
   content: "Nouveau";
   font-family: "roboto";
+  color: #1b6150;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -592,67 +593,67 @@ footer h3 {
 }
 
 @media screen and (min-width: 1000px) {
-  .ul__container {
+  .ul-container {
     display: flex;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 1000px) {
-  .ul__container ul {
+  .ul-container ul {
     width: 30%;
   }
 }
 
-.menu__ul__first {
+.ul-container__first {
   padding-left: 30px;
   list-style: none;
 }
-.menu__ul__first li {
+.ul-container__first li {
   animation: cascade 2s;
   animation-fill-mode: both;
 }
-.menu__ul__first li:nth-child(1) {
+.ul-container__first li:nth-child(1) {
   animation-delay: 2.3s;
 }
-.menu__ul__first li:nth-child(2) {
+.ul-container__first li:nth-child(2) {
   animation-delay: 2.5s;
 }
-.menu__ul__first li:nth-child(3) {
+.ul-container__first li:nth-child(3) {
   animation-delay: 2.7s;
 }
-.menu__ul__first li:nth-child(4) {
+.ul-container__first li:nth-child(4) {
   animation-delay: 2.9s;
 }
-.menu__ul__first li:nth-child(5) {
+.ul-container__first li:nth-child(5) {
   animation-delay: 3.1s;
 }
-.menu__ul__first li:nth-child(6) {
+.ul-container__first li:nth-child(6) {
   animation-delay: 3.3s;
 }
-.menu__ul__first li:nth-child(7) {
+.ul-container__first li:nth-child(7) {
   animation-delay: 3.5s;
 }
-.menu__ul__first li:nth-child(8) {
+.ul-container__first li:nth-child(8) {
   animation-delay: 3.7s;
 }
-.menu__ul__first li:nth-child(9) {
+.ul-container__first li:nth-child(9) {
   animation-delay: 3.9s;
 }
-.menu__ul__first li:nth-child(10) {
+.ul-container__first li:nth-child(10) {
   animation-delay: 4.1s;
 }
-.menu__ul__first .title {
+.ul-container__first .title {
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 5px;
 }
-.menu__ul__first .color {
+.ul-container__first .color {
   height: 4px;
   width: 60px;
   background-color: #99E2D0;
   margin-bottom: 20px;
 }
-.menu__ul__first .information {
+.ul-container__first .information {
   overflow: hidden;
   background-color: white;
   height: 100px;
@@ -663,34 +664,34 @@ footer h3 {
   display: flex;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
-.menu__ul__first .information h2 {
+.ul-container__first .information h2 {
   margin-bottom: 5px;
 }
-.menu__ul__first .information .information__description {
+.ul-container__first .information .information__description {
   width: 100%;
   max-width: 100%;
   min-width: 20%;
   padding-top: 20px;
   overflow: hidden;
 }
-.menu__ul__first .information .information__description h3 {
+.ul-container__first .information .information__description h3 {
   font-size: 24px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__ul__first .information .information__description p {
+.ul-container__first .information .information__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 22px;
   margin-top: 10px;
 }
-.menu__ul__first .information .information__price {
+.ul-container__first .information .information__price {
   padding: 60px 30px 0 10px;
   font-size: 20px;
 }
-.menu__ul__first .information__check {
+.ul-container__first .information__check {
   background-color: #99E2D0;
   height: 100px;
   width: 90px;
@@ -702,68 +703,69 @@ footer h3 {
   align-items: center;
   transition: all 1s;
 }
-.menu__ul__first .information__check .fa-circle-check {
+.ul-container__first .information__check .fa-circle-check {
   font-size: 35px;
   color: white;
 }
-.menu__ul__first .information:hover .information__check {
+.ul-container__first .information:hover .information__check {
   margin-right: -1px;
+  cursor: pointer;
 }
-.menu__ul__first .information:hover .information__check .fa-circle-check {
+.ul-container__first .information:hover .information__check .fa-circle-check {
   transform: rotate(-2turn);
   transition: 1s;
 }
 
-.menu__ul__second {
+.ul-container__second {
   padding-left: 30px;
   list-style: none;
 }
-.menu__ul__second li {
+.ul-container__second li {
   animation: cascade 2s;
   animation-fill-mode: both;
 }
-.menu__ul__second li:nth-child(1) {
+.ul-container__second li:nth-child(1) {
   animation-delay: 2.9s;
 }
-.menu__ul__second li:nth-child(2) {
+.ul-container__second li:nth-child(2) {
   animation-delay: 3.1s;
 }
-.menu__ul__second li:nth-child(3) {
+.ul-container__second li:nth-child(3) {
   animation-delay: 3.3s;
 }
-.menu__ul__second li:nth-child(4) {
+.ul-container__second li:nth-child(4) {
   animation-delay: 3.5s;
 }
-.menu__ul__second li:nth-child(5) {
+.ul-container__second li:nth-child(5) {
   animation-delay: 3.7s;
 }
-.menu__ul__second li:nth-child(6) {
+.ul-container__second li:nth-child(6) {
   animation-delay: 3.9s;
 }
-.menu__ul__second li:nth-child(7) {
+.ul-container__second li:nth-child(7) {
   animation-delay: 4.1s;
 }
-.menu__ul__second li:nth-child(8) {
+.ul-container__second li:nth-child(8) {
   animation-delay: 4.3s;
 }
-.menu__ul__second li:nth-child(9) {
+.ul-container__second li:nth-child(9) {
   animation-delay: 4.5s;
 }
-.menu__ul__second li:nth-child(10) {
+.ul-container__second li:nth-child(10) {
   animation-delay: 4.7s;
 }
-.menu__ul__second .title {
+.ul-container__second .title {
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 5px;
 }
-.menu__ul__second .color {
+.ul-container__second .color {
   height: 4px;
   width: 60px;
   background-color: #99E2D0;
   margin-bottom: 20px;
 }
-.menu__ul__second .information {
+.ul-container__second .information {
   overflow: hidden;
   background-color: white;
   height: 100px;
@@ -774,34 +776,34 @@ footer h3 {
   display: flex;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
-.menu__ul__second .information h2 {
+.ul-container__second .information h2 {
   margin-bottom: 5px;
 }
-.menu__ul__second .information .information__description {
+.ul-container__second .information .information__description {
   width: 100%;
   max-width: 100%;
   min-width: 20%;
   padding-top: 20px;
   overflow: hidden;
 }
-.menu__ul__second .information .information__description h3 {
+.ul-container__second .information .information__description h3 {
   font-size: 24px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__ul__second .information .information__description p {
+.ul-container__second .information .information__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 22px;
   margin-top: 10px;
 }
-.menu__ul__second .information .information__price {
+.ul-container__second .information .information__price {
   padding: 60px 30px 0 10px;
   font-size: 20px;
 }
-.menu__ul__second .information__check {
+.ul-container__second .information__check {
   background-color: #99E2D0;
   height: 100px;
   width: 90px;
@@ -813,68 +815,69 @@ footer h3 {
   align-items: center;
   transition: all 1s;
 }
-.menu__ul__second .information__check .fa-circle-check {
+.ul-container__second .information__check .fa-circle-check {
   font-size: 35px;
   color: white;
 }
-.menu__ul__second .information:hover .information__check {
+.ul-container__second .information:hover .information__check {
   margin-right: -1px;
+  cursor: pointer;
 }
-.menu__ul__second .information:hover .information__check .fa-circle-check {
+.ul-container__second .information:hover .information__check .fa-circle-check {
   transform: rotate(-2turn);
   transition: 1s;
 }
 
-.menu__ul__third {
+.ul-container__third {
   padding-left: 30px;
   list-style: none;
 }
-.menu__ul__third li {
+.ul-container__third li {
   animation: cascade 2s;
   animation-fill-mode: both;
 }
-.menu__ul__third li:nth-child(1) {
+.ul-container__third li:nth-child(1) {
   animation-delay: 3.5s;
 }
-.menu__ul__third li:nth-child(2) {
+.ul-container__third li:nth-child(2) {
   animation-delay: 3.7s;
 }
-.menu__ul__third li:nth-child(3) {
+.ul-container__third li:nth-child(3) {
   animation-delay: 3.9s;
 }
-.menu__ul__third li:nth-child(4) {
+.ul-container__third li:nth-child(4) {
   animation-delay: 4.1s;
 }
-.menu__ul__third li:nth-child(5) {
+.ul-container__third li:nth-child(5) {
   animation-delay: 4.3s;
 }
-.menu__ul__third li:nth-child(6) {
+.ul-container__third li:nth-child(6) {
   animation-delay: 4.5s;
 }
-.menu__ul__third li:nth-child(7) {
+.ul-container__third li:nth-child(7) {
   animation-delay: 4.7s;
 }
-.menu__ul__third li:nth-child(8) {
+.ul-container__third li:nth-child(8) {
   animation-delay: 4.9s;
 }
-.menu__ul__third li:nth-child(9) {
+.ul-container__third li:nth-child(9) {
   animation-delay: 5.1s;
 }
-.menu__ul__third li:nth-child(10) {
+.ul-container__third li:nth-child(10) {
   animation-delay: 5.3s;
 }
-.menu__ul__third .title {
+.ul-container__third .title {
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 5px;
 }
-.menu__ul__third .color {
+.ul-container__third .color {
   height: 4px;
   width: 60px;
   background-color: #99E2D0;
   margin-bottom: 20px;
 }
-.menu__ul__third .information {
+.ul-container__third .information {
   overflow: hidden;
   background-color: white;
   height: 100px;
@@ -885,34 +888,34 @@ footer h3 {
   display: flex;
   box-shadow: 2px 2px 5px rgb(192, 191, 191);
 }
-.menu__ul__third .information h2 {
+.ul-container__third .information h2 {
   margin-bottom: 5px;
 }
-.menu__ul__third .information .information__description {
+.ul-container__third .information .information__description {
   width: 100%;
   max-width: 100%;
   min-width: 20%;
   padding-top: 20px;
   overflow: hidden;
 }
-.menu__ul__third .information .information__description h3 {
+.ul-container__third .information .information__description h3 {
   font-size: 24px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__ul__third .information .information__description p {
+.ul-container__third .information .information__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 22px;
   margin-top: 10px;
 }
-.menu__ul__third .information .information__price {
+.ul-container__third .information .information__price {
   padding: 60px 30px 0 10px;
   font-size: 20px;
 }
-.menu__ul__third .information__check {
+.ul-container__third .information__check {
   background-color: #99E2D0;
   height: 100px;
   width: 90px;
@@ -924,14 +927,15 @@ footer h3 {
   align-items: center;
   transition: all 1s;
 }
-.menu__ul__third .information__check .fa-circle-check {
+.ul-container__third .information__check .fa-circle-check {
   font-size: 35px;
   color: white;
 }
-.menu__ul__third .information:hover .information__check {
+.ul-container__third .information:hover .information__check {
   margin-right: -1px;
+  cursor: pointer;
 }
-.menu__ul__third .information:hover .information__check .fa-circle-check {
+.ul-container__third .information:hover .information__check .fa-circle-check {
   transform: rotate(-2turn);
   transition: 1s;
 }
@@ -950,7 +954,7 @@ footer {
 }
 footer h3 {
   width: 90%;
-  margin-left: 1%;
+  margin: 15px 0 15px 1%;
   font-size: 25px;
 }
 @media screen and (min-width: 1189px) {
@@ -973,7 +977,9 @@ footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+footer ul li {
+  margin-bottom: 5px;
 }
 footer ul li a {
   color: white;

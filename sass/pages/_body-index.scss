@@ -148,7 +148,7 @@
                     }
                 }
             }
-
+            
         }
         @media screen and (min-width: 800px){
             width: 44%;
@@ -159,6 +159,7 @@
         &::before {
             content : "Nouveau";
             font-family: 'roboto';
+            color: darken($color: #99E2D0, $amount: 50%);
             position : absolute;
             right : 15px;
             top : 15px;

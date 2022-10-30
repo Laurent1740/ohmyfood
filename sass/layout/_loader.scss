@@ -24,10 +24,10 @@
             animation: loading 1s infinite linear;
             animation-fill-mode: both;
             @for $i from 1 through 5 {
-            &:nth-child(#{$i}){
-            animation-delay: 100ms * $i;
-        }
-    }
+                &:nth-child(#{$i}){
+                    animation-delay: 100ms * $i;
+                }
+            }
         }
     }
 }
