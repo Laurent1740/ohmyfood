@@ -994,6 +994,7 @@ footer ul li .fa-handshake-angle {
   footer ul {
     height: 50px;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 836px) {
