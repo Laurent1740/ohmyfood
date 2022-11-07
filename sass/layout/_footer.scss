@@ -35,6 +35,9 @@
                 .fa-handshake-angle {
                     font-size: 18px;
                 }
+                &:hover {
+                    cursor: pointer;
+                }
             }
             @media screen and (min-width: 836px){
                 height: 50px;

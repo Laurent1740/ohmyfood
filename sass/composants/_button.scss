@@ -3,12 +3,16 @@
     height : 60px;
     width : 230px;
     margin : 30px 0 50px 0;
-    border-radius: 25px;
+    border-radius: 35px;
     font-weight: bold;
     font-size: 20px;
     color : white;
     @include gradiant;
     box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 }
 
 .intro {
@@ -17,11 +21,15 @@
         height : 60px;
         width : 290px;
         margin : 30px 0 50px 0;
-        border-radius: 25px;
+        border-radius: 35px;
         font-weight: bold;
         font-size: 20px;
         color : white;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+    }
+    button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }

@@ -4,7 +4,7 @@
     opacity: 0;
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(0, 0);
     opacity: 1;
   }
 }
@@ -36,7 +36,7 @@
     opacity: 0;
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(0, 0);
     opacity: 1;
   }
 }
@@ -109,12 +109,16 @@
   height: 60px;
   width: 230px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.menus_button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .intro button {
@@ -122,12 +126,16 @@
   height: 60px;
   width: 290px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.intro button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 * {
@@ -317,12 +325,16 @@ footer h3 {
   height: 60px;
   width: 230px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.menus_button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .intro button {
@@ -330,12 +342,16 @@ footer h3 {
   height: 60px;
   width: 290px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.intro button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .fonction {
@@ -375,7 +391,7 @@ footer h3 {
   }
 }
 .fonction ol li:hover {
-  background-color: rgb(240, 234, 243);
+  background-color: rgb(237, 217, 247);
 }
 .fonction ol li i {
   margin-right: 30px;
@@ -510,6 +526,7 @@ footer h3 {
   background-color: #99E2D0;
   width: 70px;
   height: 30px;
+  border-radius: 3px;
   display: grid;
   place-items: center;
 }
@@ -524,12 +541,16 @@ footer h3 {
   height: 60px;
   width: 230px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.menus_button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .intro button {
@@ -537,12 +558,16 @@ footer h3 {
   height: 60px;
   width: 290px;
   margin: 30px 0 50px 0;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 5px rgba(157, 157, 157, 0.633);
+}
+.intro button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 ._menu {
@@ -989,6 +1014,9 @@ footer ul li .fa-utensils {
 }
 footer ul li .fa-handshake-angle {
   font-size: 18px;
+}
+footer ul li:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 836px) {
   footer ul {
